@@ -1,5 +1,6 @@
 const path = require('path');
-const { merge } = require('webpack-merge');
+// const { merge } = require('webpack-merge'); // 报错使用该配置
+const merge = require('webpack-merge');
 const common = require('./webpack.common.js');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
@@ -18,15 +19,6 @@ module.exports = merge(common, {
         ],
       },
     ],
-  },
-  /* 该配置与 karma 冲突，使用时注释 */
-  externals: {
-    vue: {
-      root: 'Vue',
-      commonjs: 'vue',
-      commonjs2: 'vue',
-      amd: 'vue'
-    },
   },
   plugins: [
     new MiniCssExtractPlugin({

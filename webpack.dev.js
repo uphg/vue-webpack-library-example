@@ -1,5 +1,6 @@
 const path = require('path');
-const { merge } = require('webpack-merge');
+// const { merge } = require('webpack-merge'); // 报错使用该配置
+const merge = require('webpack-merge');
 const common = require('./webpack.common.js');
 
 module.exports = merge(common, {
