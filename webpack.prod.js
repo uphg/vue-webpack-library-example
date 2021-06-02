@@ -20,6 +20,14 @@ module.exports = merge(common, {
       },
     ],
   },
+  externals: {
+    vue: {
+      root: 'Vue',
+      commonjs: 'vue',
+      commonjs2: 'vue',
+      amd: 'vue'
+    },
+  },
   plugins: [
     new MiniCssExtractPlugin({
       filename: 'css/[name].css' // 分离 CSS 样式文件

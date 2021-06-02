@@ -1,4 +1,4 @@
-var webpackConfig = require('./webpack.default.js')
+var webpackConfig = require('./webpack.common.js')
 // const path = require('path');
 
 module.exports = function(config) {

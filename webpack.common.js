@@ -35,15 +35,6 @@ module.exports = {
       },
     ]
   },
-  /* 该配置与 karma 冲突，使用时注释 */
-  // externals: {
-  //   vue: {
-  //     root: 'Vue',
-  //     commonjs: 'vue',
-  //     commonjs2: 'vue',
-  //     amd: 'vue'
-  //   },
-  // },
   plugins: [
     new HtmlWebpackPlugin({
       inject: 'body', // 配置 JS 文件引入到哪里
